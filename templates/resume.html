@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+</head>
+<body>
+    <h1>{{ personal_info.name }}的个人简历</h1>
+    <p>出生年月：{{ personal_info.birth_year }}年{{ personal_info.birth_month }}月</p>
+    <p>电子邮箱：{{ personal_info.email }}</p>
+    <p>联系电话：{{ personal_info.phone }}</p>
+    <p>籍贯：{{ personal_info.native_place }}</p>
+
+    <h2>教育经历</h2>
+    {% for experience in education_experience %}
+        <p>{{ experience.school }} - {{ experience.year }}</p>
+    {% endfor %}
+
+    <h2>工作经历</h2>
+    {% for experience in work_experience %}
+        <p>{{ experience.company }} - {{ experience.position }} - {{ experience.year }}</p>
+    {% endfor %}
+
+    <h2>奖惩情况</h2>
+    {% for award in awards_rewards %}
+        <p>{{ award.type }}：{{ award.content }}</p>
+    {% endfor %}
+
+    <h2>技能证书</h2>
+    {% for certificate in skills_certificates %}
+        <p>{{ certificate.name }} - {{ certificate.year }}</p>
+    {% endfor %}
+</body>
+</html>
