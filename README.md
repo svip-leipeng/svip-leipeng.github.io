@@ -19,4 +19,7 @@ svip-leipeng的个人主页
 ## 打卡统计
 <div align="center"> <img src="https://github-readme-streak-stats.herokuapp.com/?user=svip-leipeng" /> </div>
 
+## 奖杯
+<div align="center"> <img src="https://github-profile-trophy.vercel.app/?username=svip-leipeng" /> </div>
+
 
